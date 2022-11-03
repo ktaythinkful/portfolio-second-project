@@ -19,6 +19,9 @@ h3 {
 /* Header */
 header {
   text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* Containers */
@@ -33,13 +36,45 @@ article {
 }
 
 article div {
-  text-align: center;
   width: 100%;
+}
+
+nav {
+  padding-left: 30px;
+}
+
+/* New containers for pt. 2 */
+
+#intro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#image {
+  justify-content: center;
+  display: flex;
+}
+
+#portfolio {
+  justify-content: space-around;
+  align-content: flex-start;
+  display: flex;
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+#portfolio section {
+  max-width: 200px;
 }
 
 /* Paragraphs */
 p {
   line-height: 1.5;
+}
+
+#portfolio p {
+  font-size: 14px;
 }
 
 /* Links */
@@ -75,4 +110,9 @@ footer {
 /* Other page elements */
 hr {
   border: 1px solid black;
+}
+
+.pagebreak {
+  height: 0px;
+  flex-basis: 100%;
 }
